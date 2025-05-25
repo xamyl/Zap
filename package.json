@@ -1,6 +1,7 @@
 {
   "name": "zap",
   "private": true,
+  "packageManager": "pnpm@10.11.0",
   "scripts": {
     "web:build": "cd apps/web && pnpm run build",
     "web:dev": "cd apps/web && pnpm run dev",
