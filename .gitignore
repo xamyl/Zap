@@ -1,0 +1,11 @@
+node_modules
+pnpm-lock.yaml
+.turbo
+.next
+build
+out
+dist
+.env
+.vercel
+cache
+

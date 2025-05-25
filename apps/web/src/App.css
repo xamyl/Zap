@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom right, #111827, #1f2937);
+  color: white;
+  padding: 2rem;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fcd34d;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Icon animation */
+.icon-pulse {
+  color: #facc15;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}

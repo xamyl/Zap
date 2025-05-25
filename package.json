@@ -1,0 +1,31 @@
+{
+  "name": "zap",
+  "private": true,
+  "scripts": {
+    "web:build": "cd apps/web && pnpm run build",
+    "web:dev": "cd apps/web && pnpm run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "docs:dev": "vitepress dev apps/docs",
+    "docs:build": "vitepress build apps/docs",
+    "docs:preview": "vitepress preview apps/docs",
+    "backend:dev": "cd apps/backend && pnpm run dev",
+    "backend:build": "cd apps/backend && pnpm run build"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.3",
+    "typescript": "5.8.2",
+    "vitepress": "^1.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packages": [
+    "apps/*",
+    "packages/*"
+  ]
+}
